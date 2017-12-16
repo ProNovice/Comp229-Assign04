@@ -7,6 +7,9 @@ namespace Comp229_Assign04
 {
     public class Character
     {
+        // Because Model aspx exists, Model class cannot be declared.
+        // So the name of class became 'Character' instead of 'Model'
+
         public string name { get; set; }
         public string faction { get; set; }
         public int rank { get; set; }

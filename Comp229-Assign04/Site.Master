@@ -51,6 +51,7 @@
                         <ul class="nav navbar-nav">
                             <li><a runat="server" href="~/Home.aspx">Home</a></li>
                             <li><a runat="server" href="~/Model.aspx">Model</a></li>
+                            <li><a runat="server" href="~/Contact.aspx">Suggestion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -68,7 +69,6 @@
                 </div>
             </footer>
         </div>
-
     </form>
 </body>
 </html>
