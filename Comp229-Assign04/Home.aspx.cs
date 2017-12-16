@@ -324,7 +324,7 @@ namespace Comp229_Assign04
         {
             UpdateNewModelSession();
             DisplayNewModel();
-        }
+        }       
 
     }
 }
