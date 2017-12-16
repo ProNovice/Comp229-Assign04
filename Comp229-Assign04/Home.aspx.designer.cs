@@ -58,6 +58,15 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.HtmlControls.HtmlTable modelTable;
         
         /// <summary>
+        /// modelImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage modelImage;
+        
+        /// <summary>
         /// txtImageUrl control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtImageUrl;
+        
+        /// <summary>
+        /// applyImageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button applyImageButton;
         
         /// <summary>
         /// txtName control.
@@ -121,6 +139,33 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.TextBox txtDeploymentZone;
         
         /// <summary>
+        /// txtTraits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTraits;
+        
+        /// <summary>
+        /// txtTypes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTypes;
+        
+        /// <summary>
+        /// txtDefenseChart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDefenseChart;
+        
+        /// <summary>
         /// txtMobility control.
         /// </summary>
         /// <remarks>
@@ -155,6 +200,42 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtWounds;
+        
+        /// <summary>
+        /// newActionRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater newActionRepeater;
+        
+        /// <summary>
+        /// addNewActionRowButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addNewActionRowButton;
+        
+        /// <summary>
+        /// newSpecialRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater newSpecialRepeater;
+        
+        /// <summary>
+        /// addNewSpecialRowButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addNewSpecialRowButton;
         
         /// <summary>
         /// btnAddModel control.

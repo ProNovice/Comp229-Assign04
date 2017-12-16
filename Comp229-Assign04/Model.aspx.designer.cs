@@ -40,6 +40,33 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.HtmlControls.HtmlImage imgModel;
         
         /// <summary>
+        /// divImageUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divImageUrl;
+        
+        /// <summary>
+        /// txtImageUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtImageUrl;
+        
+        /// <summary>
+        /// applyImageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button applyImageButton;
+        
+        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -148,6 +175,87 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label lblDeploymentZone;
         
         /// <summary>
+        /// divTraits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTraits;
+        
+        /// <summary>
+        /// txtTraits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTraits;
+        
+        /// <summary>
+        /// lblTraits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTraits;
+        
+        /// <summary>
+        /// divTypes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTypes;
+        
+        /// <summary>
+        /// txtTypes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTypes;
+        
+        /// <summary>
+        /// lblTypes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTypes;
+        
+        /// <summary>
+        /// divDefenseCharts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divDefenseCharts;
+        
+        /// <summary>
+        /// txtDefenseChart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDefenseChart;
+        
+        /// <summary>
+        /// lblDefenseChart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDefenseChart;
+        
+        /// <summary>
         /// txtMobility control.
         /// </summary>
         /// <remarks>
@@ -236,6 +344,42 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater updateActionRepeater;
+        
+        /// <summary>
+        /// addNewActionRowButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addNewActionRowButton;
+        
+        /// <summary>
+        /// specialRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater specialRepeater;
+        
+        /// <summary>
+        /// updateSpecialRepeater control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater updateSpecialRepeater;
+        
+        /// <summary>
+        /// addNewSpecialRowButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addNewSpecialRowButton;
         
         /// <summary>
         /// btnEdit control.
