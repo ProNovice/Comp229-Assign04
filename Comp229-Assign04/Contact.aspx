@@ -8,23 +8,37 @@
         <br />
         <br />
     </div>
-    <div style="margin-left: 40%; height:300px; text-align:left;">
+    <div style="margin-left: 40%; height: 300px; text-align: left;">
         <table>
             <tr>
                 <td>Name: </td>
                 <td>
-                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server" type="text"></asp:TextBox></td>
+                    <asp:TextBox CssClass="form-control" ID="txtName" runat="server" type="text"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <asp:RequiredFieldValidator ValidationGroup="mailForm" runat="server" ControlToValidate="txtName" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td>E-mail: </td>
                 <td>
-                    <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" type="email"></asp:TextBox></td>
+                    <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" type="email"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <asp:RequiredFieldValidator ValidationGroup="mailForm" runat="server" ControlToValidate="txtEmail" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <br />
                     <br />
-                    <asp:Button ID="btnSendMail" runat="server" OnClick="SendMailButton_Click" CssClass="btn btn-warning" Text="Send Updated Models Info" /></td>
+                    <asp:Button ID="btnSendMail" runat="server" OnClick="SendMailButton_Click" ValidationGroup="mailForm" CssClass="btn btn-warning" Text="Send Updated Models Info" /></td>
             </tr>
             <tr>
                 <td colspan="2">

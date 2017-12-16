@@ -189,7 +189,7 @@
                                     <td>Wounds: </td>
                                     <td>
                                         <asp:TextBox CssClass="form-control" ID="txtWounds" runat="server" type="number"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ValidationGroup="newModel" runat="server" ControlToValidate="txtWounds" ErrorMessage="This field is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                        <asp:RequiredFieldValidator ValidationGroup="newModel" runat="server" ControlToValidate="txtWounds" ErrorMessage="Wounds is required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                             </table>

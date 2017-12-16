@@ -19,41 +19,50 @@ namespace Comp229_Assign04
 
         protected void SendMailButton_Click(object sender, EventArgs e)
         {
+            //JSON path to attach
+            var jsonPath = Server.MapPath("Assign04.json");
+            //SMTP server and port number
+
+            // the given Email address cannot be authenticated, so another Email was used
+            //SmtpClient smtpClient = new SmtpClient("smtp-mail.outlook.com", 587);
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+
             try
             {
-                var jsonPath = Server.MapPath("Assign04.json");
-                string jsonString = File.ReadAllText(jsonPath);
 
 
                 // take all information from the form
                 string name = txtName.Text;
                 string email = txtEmail.Text;
-                string content = jsonString;
+                string content = "";
 
                 //create a MailMessage to send E-mail
-                //Reference: https://msdn.microsoft.com/en-us/library/67w4as51.aspx
-                MailMessage message = new MailMessage(email, "pronovice2000@gmail.com", "Contact from " + name, content);   // Syntax: MailMessage( from Mail, to Mail, title, body)            
+                //reference: https://msdn.microsoft.com/en-us/library/67w4as51.aspx
+                MailMessage message = new MailMessage(email, "cc-comp229f2016@outlook.com", "New suggestion from " + name, content);   // Syntax: MailMessage( from Mail, to Mail, title, body)            
 
-                //SMTP server and port number
-                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                //attach JSON file
+                //reference: https://stackoverflow.com/questions/15017132/how-to-send-email-with-attachment-in-asp-net
+                Attachment file = new Attachment(jsonPath);
+                message.Attachments.Add(file);
 
-                //smtpClient.UseDefaultCredentials = false;
-                // Do not use the information stored in the System
-                smtpClient.EnableSsl = true;
                 // Using Ssl
+                smtpClient.EnableSsl = true;
+                // Do not use the information stored in the System
+                smtpClient.UseDefaultCredentials = false;
+                // It is necessary to be authenticated
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-                // It is necessary to be authenticated from Gmail.
+
+                // the given Email address cannot be authenticated, so another Email was used
+                //smtpClient.Credentials = new System.Net.NetworkCredential("cc-comp229f2016@outlook.com", "password");
+
                 smtpClient.Credentials = new System.Net.NetworkCredential("sojeontest01@gmail.com", "thwjsxptmxm"); // the email to use
-                // Get authenticated by Gmail address and password
-
                 smtpClient.Send(message);
-
                 message.Dispose(); //clean up the message
                 lblResult.Text = "Successfully the suggestion sent.";   // feedback success message;
             }
             catch (Exception exception)
             {
-                lblResult.Text = "Failed sending the suggestion.";// feedback fail message
+                lblResult.Text = "Failed sending the suggestion." + exception.ToString();// feedback fail message
             }
 
         }
